@@ -1,8 +1,7 @@
 import React from "react";
 import ListedProduct from "./ListProduct/ListedProduct";
 
-const Cart = ({ listedItem }) => {
-  // console.log(listedItem);
+const Cart = ({ listedItem, clearList }) => {
   return (
     <div className="sticky top-0">
       <h2 className="text-4xl font-bold mt-14 text-center mb-9">
@@ -37,7 +36,9 @@ const Cart = ({ listedItem }) => {
         <button className="text-white bg-[#d922e6] hover:text-gray-300 px-12 py-3 font-semibold text-xl rounded-xl">
           Best For Me
         </button>
-        <button className="text-white bg-[#da7e15] hover:text-gray-300 px-12 py-3 font-semibold text-xl rounded-xl">
+        <button
+          className="text-white bg-[#da7e15] hover:text-gray-300 px-12 py-3 font-semibold text-xl rounded-xl"
+          onClick={() => clearList()}>
           Clear list
         </button>
       </div>

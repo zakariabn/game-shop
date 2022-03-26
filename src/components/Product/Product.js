@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Product = ({ name, price, img, item, clickedHandel }) => {
   return (
@@ -17,7 +19,10 @@ const Product = ({ name, price, img, item, clickedHandel }) => {
       <button
         className="bg-[#e67322] transition hover:bg-[#f18f0e] hover:rounded-b-2xl w-full h-[40px] absolute bottom-0 left-[-0] text-blue-900 font-bold"
         onClick={() => clickedHandel(item)}>
-        Add to List
+        <span className="mr-4">Add to List</span>
+        <FontAwesomeIcon
+          icon={faArrowRight}
+          className="text-amber-50"></FontAwesomeIcon>
       </button>
     </div>
   );
