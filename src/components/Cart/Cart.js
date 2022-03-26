@@ -1,23 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import BestItem from "./BestItem/BestItem";
 import ListedProduct from "./ListProduct/ListedProduct";
 
 const Cart = ({ listedItem, clearList }) => {
-  let bestItem;
-  function getBestOne(array) {
-    function randomNumber() {
-      const number = Math.round(Math.random() * 10);
-      if (number > array.length - 1) {
-        return randomNumber();
-      } else {
-        return number;
+  const [bestItem, setBestItem] = useState([]);
+
+  function clickHandel() {
+    if (listedItem.length <= 0) {
+      console.log("list item empty");
+      return;
+    } else if (listedItem) {
+      function findBest() {
+        let bestItem =
+          listedItem[Math.ceil(Math.random() * listedItem.length - 1)];
+
+        if (bestItem) {
+          return bestItem;
+        } else {
+          return findBest();
+        }
       }
-    }
-    if (array.length === 0) {
-      console.log("List is empty");
-    } else {
-      bestItem = array[randomNumber()];
-      console.log(bestItem);
+      setBestItem(findBest());
     }
   }
 
@@ -56,7 +59,7 @@ const Cart = ({ listedItem, clearList }) => {
       <div className="flex flex-col items-center gap-y-5">
         <button
           className="text-white bg-[#d922e6] hover:text-gray-300 px-12 py-3 font-semibold text-xl rounded-xl"
-          onClick={() => getBestOne(listedItem)}>
+          onClick={() => clickHandel()}>
           Best For Me
         </button>
         <button
