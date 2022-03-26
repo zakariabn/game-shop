@@ -1,6 +1,8 @@
 import React from "react";
+import ListedProduct from "./ListProduct/ListedProduct";
 
-const Cart = () => {
+const Cart = ({ listedItem }) => {
+  // console.log(listedItem);
   return (
     <div className="sticky top-0">
       <h2 className="text-4xl font-bold mt-14 text-center mb-9">
@@ -9,14 +11,31 @@ const Cart = () => {
 
       {/* listed items */}
       <div className="mb-10">
-        <ul>
-          <li>d</li>
-        </ul>
+        {listedItem.map((item) => {
+          const { _id, name, price, img } = item;
+
+          /* const isFound = listedItem.find(item._id)
+          if () {
+
+          }
+          else {
+            
+          } */
+          return (
+            <ListedProduct
+              key={_id}
+              id={_id + 1}
+              name={name}
+              img={img}
+              price={price}
+              listedItem={listedItem}></ListedProduct>
+          );
+        })}
       </div>
 
       <div className="flex flex-col items-center gap-y-5">
         <button className="text-white bg-[#d922e6] hover:text-gray-300 px-12 py-3 font-semibold text-xl rounded-xl">
-          Best Deal
+          Best For Me
         </button>
         <button className="text-white bg-[#da7e15] hover:text-gray-300 px-12 py-3 font-semibold text-xl rounded-xl">
           Clear list
