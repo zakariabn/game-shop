@@ -1,7 +1,26 @@
 import React from "react";
+import BestItem from "./BestItem/BestItem";
 import ListedProduct from "./ListProduct/ListedProduct";
 
 const Cart = ({ listedItem, clearList }) => {
+  let bestItem;
+  function getBestOne(array) {
+    function randomNumber() {
+      const number = Math.round(Math.random() * 10);
+      if (number > array.length - 1) {
+        return randomNumber();
+      } else {
+        return number;
+      }
+    }
+    if (array.length === 0) {
+      console.log("List is empty");
+    } else {
+      bestItem = array[randomNumber()];
+      console.log(bestItem);
+    }
+  }
+
   return (
     <div className="sticky top-0">
       <h2 className="text-4xl font-bold mt-14 text-center mb-9">
@@ -30,10 +49,14 @@ const Cart = ({ listedItem, clearList }) => {
               listedItem={listedItem}></ListedProduct>
           );
         })}
+
+        <BestItem item={bestItem}></BestItem>
       </div>
 
       <div className="flex flex-col items-center gap-y-5">
-        <button className="text-white bg-[#d922e6] hover:text-gray-300 px-12 py-3 font-semibold text-xl rounded-xl">
+        <button
+          className="text-white bg-[#d922e6] hover:text-gray-300 px-12 py-3 font-semibold text-xl rounded-xl"
+          onClick={() => getBestOne(listedItem)}>
           Best For Me
         </button>
         <button

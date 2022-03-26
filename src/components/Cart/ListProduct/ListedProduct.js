@@ -10,11 +10,16 @@ const ListedProduct = ({ id, name, img, listedItem }) => {
       }
     }
   }
+
   return (
-    <div className="flex justify-between px-5 my-5">
-      <div className="flex gap-x-6">
-        <img src={img} alt="" className="w-[25px] h-[25px] rounded-full" />
-        <p>{name}</p>
+    <div className="flex justify-between items-center px-5 py-2 my-5 mx-4 rounded-full bg-[#ffffff69]">
+      <div className="flex items-center gap-x-6">
+        <img
+          src={img}
+          alt=""
+          className="w-[35px] h-[35px] rounded-full shadow-sm"
+        />
+        <p className="font-bold">{name}</p>
       </div>
       <FontAwesomeIcon
         icon={faTrashCan}
