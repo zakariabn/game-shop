@@ -2,61 +2,61 @@
   {
     "_id": "623e2c2f40db0dc4593489fa",
     "price": "0",
-    "img": "../src/asset/fackData/images/apex-legends.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BOTlhMTdiY2YtOTI3My00Y2M5LWI5YWQtYzgyYzgzMzhlMzExXkEyXkFqcGdeQXVyMzM2MzI5MzU@._V1_.jpg",
     "name": "Apex Legends"
   },
   {
     "_id": "623e2c2fea69278e96309236",
     "price": "49",
-    "img": "../src/asset/fackData/images/asassin-creed-valhalla.jpg",
+    "img": "https://cdn.europosters.eu/image/1300/posters/assassin-s-creed-valhalla-raid-i96340.jpg",
     "name": "Assassin's Creed Valhalla"
   },
   {
     "_id": "623e2c2f5d59f17f5bf225f7",
     "price": "40",
-    "img": "../src/asset/fackData/images/forza-horizon-5.jpg",
+    "img": "https://i.pinimg.com/originals/1d/c3/89/1dc3890da04a49ffe91bd1f58f14e722.jpg",
     "name": "Forza Horizon 5"
   },
   {
     "_id": "623e2c2f98b515dd0ae4ef05",
     "price": "38",
-    "img": "../src/asset/fackData/images/god-of-war.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BMmVjMzkyYWMtNDNhNi00ZWI3LTgxNGUtODRkMWYxNjZmNDI5XkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_.jpg",
     "name": "God Of War"
   },
   {
     "_id": "623e2c2f2f57430f2cb44470",
     "price": "15",
-    "img": "../src/asset/fackData/images/gtaV.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BYWQyNTY1NzAtMGJiYi00ZTcwLWE0ZjktYjY4YTZkMzA1YzZmXkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_FMjpg_UX1000_.jpg",
     "name": "GTA V"
   },
   {
     "_id": "623e2c2fc3c09c186a63522a",
     "price": "26",
-    "img": "../src/asset/fackData/images/minecraft.jpg",
+    "img": "https://www.britishvintageposters.co.uk/ekmps/shops/6d7106/images/minecraft-poster-2464-p.jpg",
     "name": "Minecraft"
   },
   {
     "_id": "623e2c2f6ea5e51e210572cb",
     "price": "21",
-    "img": "../src/asset/fackData/images/pubg.jpg",
+    "img": "https://files.oyebesmartest.com/uploads/preview/pubg-wallpt4g.jpg",
     "name": "PUBG"
   },
   {
     "_id": "623e2c2f16559ab1ba3d6a28",
     "price": "13",
-    "img": "../src/asset/fackData/images/red-ded-redemption.jpg",
+    "img": "https://m.media-amazon.com/images/M/MV5BMmQ2YWQzN2ItZDU5OC00YjYwLThiYzEtMjNhNWY3MmI1YTEyXkEyXkFqcGdeQXVyMTI0MzA4NTgw._V1_.jpg",
     "name": "Red Dead Online"
   },
   {
     "_id": "623e2c2faa95b75726c036d1",
     "price": "0",
-    "img": "../src/asset/fackData/images/rocket-league.jpg",
+    "img": "https://i.pinimg.com/originals/49/6c/35/496c357f0e05c9ac38317dd1c413aa36.jpg",
     "name": "Rocket League"
   },
   {
     "_id": "623e2c2fb791e7089af2dcd3",
     "price": "31",
-    "img": "../src/asset/fackData/images/sea-of-thieves.jpg",
+    "img": "https://cdn.shopify.com/s/files/1/0747/3829/products/mL1507_1024x1024.jpg?v=1571445438",
     "name": "Sea Of Thieves"
   }
 ]
